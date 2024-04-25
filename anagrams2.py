@@ -28,6 +28,7 @@
 
 from collections import Counter, defaultdict
 import itertools
+import sys
 
 def CleanUp(word):
     return ''.join(filter(str.isalpha, word.lower()))
@@ -100,10 +101,31 @@ def FindBestAnagrams(words, dictionaryWords):
 def FormatAnagram(results):
     return "\n".join(results)
 
-words = ["apple", "appleapple", "frog"]
-dictionaryWords = ["app", "el", "leap", "pel"]
+# words = ["apple", "appleapple", "frog"]
+# dictionaryWords = ["app", "el", "leap", "pel"]
 
-results = FindBestAnagrams(words, dictionaryWords)
-formattedOutput = FormatAnagram(results)
-print(formattedOutput)
+def main():
+    words = []
+    dictionaryWords = []
+    blank = False
+
+
+    for line in sys.stdin:
+        line = line.rstrip('\n')
+
+        if len(line.strip()) == 0:
+            blank = True
+            continue
+
+        if not blank:
+            words.append(line.lower())
+        else:
+            dictionaryWords.append(line.lower())
+    
+    results = FindBestAnagrams(words, dictionaryWords)
+    formattedOutput = FormatAnagram(results)
+    print(formattedOutput)
+
+main()
+
 
