@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 apple: apple
 appleapple: 
 frog: 
+=======
+apple: app el
+appleapple: leap app pel
+frog:
+>>>>>>> bb1deb48b02638bb5905f2f65b1086da059b96bc
