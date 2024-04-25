@@ -1,3 +1,3 @@
-applee: 
+apple: apple
 appleapple: 
 frog: 
