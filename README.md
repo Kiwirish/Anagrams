@@ -1,6 +1,6 @@
 
-Final version within anagrams2.py file.
+Final version within anagrams3.py file.
 
 Instructions:
 
-python3 anagrams.py < input.txt > output.txt
+python3 anagrams3.py < input.txt > output.txt

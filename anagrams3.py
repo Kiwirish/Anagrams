@@ -45,12 +45,15 @@ def main():
         else:
             dictionary_words.append(line.lower())
 
-    for word in words:
-        best_anagram = find_anagrams(word, dictionary_words)
-        if best_anagram:
-            print(f"{word}: {" ".join(best_anagram)}")
-        else:
-            print(f"{word}: No anagram found")
+    if blank == False:
+        print("No Input provided or no seperator")
+    else:
+        for word in words:
+            best_anagram = find_anagrams(word, dictionary_words)
+            if best_anagram:
+                print(f"{word}: {" ".join(best_anagram)}")
+            else:
+                print(f"{word}: No anagram found")
 
 if __name__ == "__main__":
     main()

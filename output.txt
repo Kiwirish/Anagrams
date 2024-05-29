@@ -2,3 +2,4 @@ star: star
 heart: earth
 aappleapplea: apple apple a a
 andatheof: death an of
+trusts: No anagram found
