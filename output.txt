@@ -1,6 +1,4 @@
-thatyou: that you
-apple: apple
-tuesday:
-sunfour: four sun
-foursun: four sun
-grassgrass: grass grass
+star: star
+heart: earth
+aappleapplea: apple apple a a
+andatheof: death an of
