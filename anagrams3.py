@@ -53,7 +53,7 @@ def main():
             if best_anagram:
                 print(f"{word}: {" ".join(best_anagram)}")
             else:
-                print(f"{word}: No anagram found")
+                print(f"{word}:")
 
 if __name__ == "__main__":
     main()
